@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.calculator {
+    /* background-color: black; */
+    margin-top: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.inputpanel {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+.functionpanel {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 400px;
+    margin-bottom: auto;
+}
+
+
+button {
+    height: 50px;
+    width: 50px;
+    margin: 2px;
+}
+
+footer {
+    /* background-color: black; */
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+
+
+
+
+
+
+/* UTILS */
+.calcinput {
+    text-align: right;
+}
+
+.fa-github {
+    transition: transform 500ms ease;
+}
+
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.3);
+}

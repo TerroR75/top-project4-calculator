@@ -6,17 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+
+    <script src="https://kit.fontawesome.com/5d933e8883.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="/styles/main.css">
 </head>
 
 <body>
-    <div>
-        <section class="inputpanel"></section>
-        <section class="functionpanel"></section>
+
+    <div class="calculator">
+        <section class="inputpanel">
+            <input type="text" class="calcinput" disabled>
+            <textarea name="calcoutput" id="calcoutput" cols="30" rows="2" disabled style="resize: none;"></textarea>
+            <textarea name="calchistory" id="calchistory" cols="30" rows="20" disabled style="resize: none;"></textarea>
+        </section>
+        <section class="functionpanel">
+            <div class="numbers">
+                <button class="btnNumber btnOne" value="1"><i class="fa-solid fa-1"></i></button>
+                <button class="btnNumber btnTwo" value="2"><i class="fa-solid fa-2"></i></button>
+                <button class="btnNumber btnThree" value="3"><i class="fa-solid fa-3"></i></button>
+                <button class="btnNumber btnFour" value="4"><i class="fa-solid fa-4"></i></button>
+                <button class="btnNumber btnFive" value="5"><i class="fa-solid fa-5"></i></button>
+                <button class="btnNumber btnSix" value="6"><i class="fa-solid fa-6"></i></button>
+                <button class="btnNumber btnSeven" value="7"><i class="fa-solid fa-7"></i></button>
+                <button class="btnNumber btnEight" value="8"><i class="fa-solid fa-8"></i></button>
+                <button class="btnNumber btnNine" value="9"><i class="fa-solid fa-9"></i></button>
+                <button class="btnNumber btnZero" value="0"><i class="fa-solid fa-0"></i></button>
+            </div>
+
+            <div class="functions">
+                <button><i class="fa-solid fa-equals"></i></button>
+                <button><i class="fa-solid fa-plus"></i></button>
+                <button><i class="fa-solid fa-minus"></i></button>
+                <button><i class="fa-solid fa-xmark"></i></button>
+                <button><i class="fa-solid fa-divide"></i></button>
+                <button><i class="fa-solid fa-square-root-variable"></i></button>
+                <button><i class="fa-solid fa-superscript"></i></button>
+            </div>
+
+        </section>
     </div>
 
 
 
+    <footer>
+        <p>
+            Copyright ©
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            TerroR75
+        </p>
+        <a href="https://github.com/TerroR75" target="_blank">
+            <i class="fab fa-github"></i></a>
+    </footer>
 
     <script src="/scr/main.js"></script>
 </body>
