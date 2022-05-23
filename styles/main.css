@@ -23,12 +23,18 @@ body {
     height: 500px;
 }
 
+
+
 .functionpanel {
     display: flex;
     flex-direction: row;
     gap: 15px;
     width: 400px;
     margin-bottom: auto;
+}
+
+.numbers {
+    width: 500px;
 }
 
 
@@ -59,6 +65,7 @@ footer {
 /* UTILS */
 .calcinput {
     text-align: right;
+    height: 5rem;
 }
 
 .fa-github {

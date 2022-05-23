@@ -16,9 +16,10 @@
 
     <div class="calculator">
         <section class="inputpanel">
-            <input type="text" class="calcinput" disabled>
+
             <textarea name="calcoutput" id="calcoutput" cols="30" rows="2" disabled style="resize: none;"></textarea>
-            <textarea name="calchistory" id="calchistory" cols="30" rows="20" disabled style="resize: none;"></textarea>
+            <input type="text" class="calcinput" disabled>
+
         </section>
         <section class="functionpanel">
             <div class="numbers">
@@ -30,18 +31,24 @@
                 <button class="btnNumber btnSix" value="6"><i class="fa-solid fa-6"></i></button>
                 <button class="btnNumber btnSeven" value="7"><i class="fa-solid fa-7"></i></button>
                 <button class="btnNumber btnEight" value="8"><i class="fa-solid fa-8"></i></button>
+
                 <button class="btnNumber btnNine" value="9"><i class="fa-solid fa-9"></i></button>
                 <button class="btnNumber btnZero" value="0"><i class="fa-solid fa-0"></i></button>
+                <button class="btnNumber btnEight" value=".">.</button>
             </div>
 
             <div class="functions">
-                <button><i class="fa-solid fa-equals"></i></button>
-                <button><i class="fa-solid fa-plus"></i></button>
-                <button><i class="fa-solid fa-minus"></i></button>
-                <button><i class="fa-solid fa-xmark"></i></button>
-                <button><i class="fa-solid fa-divide"></i></button>
-                <button><i class="fa-solid fa-square-root-variable"></i></button>
-                <button><i class="fa-solid fa-superscript"></i></button>
+                <button class="btnSpecialFunction btnClearCurrent">CE</button>
+                <button class="btnSpecialFunction btnClearAll">C</button>
+                <button class="btnFunction btnEquals "><i class="fa-solid fa-equals"></i></button>
+                <button data-operator="+" class="btnFunction btnPlus"><i class=" fa-solid fa-plus"></i></button>
+                <button data-operator="-" class="btnFunction btnMinus"><i class=" fa-solid fa-minus"></i></button>
+                <button data-operator="*" class="btnFunction btnTimes"><i class=" fa-solid fa-xmark"></i></button>
+                <button data-operator="/" class="btnFunction btnDivide"><i class=" fa-solid fa-divide"></i></button>
+                <button data-operator="v2" class="btnFunction btnSquareRoot"><i
+                        class=" fa-solid fa-square-root-variable"></i></button>
+                <button data-operator="^" class="btnFunction btnExponent"><i
+                        class=" fa-solid fa-superscript"></i></button>
             </div>
 
         </section>
