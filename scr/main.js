@@ -61,28 +61,28 @@ function setOperator() {
 function evaluate() {
     secondNumber = calcInput.value;
 
-    calcInput.value = roundNumber(calculate(currentOperator, firstNumber, secondNumber));
+    calcInput.value = roundNumber(operate(currentOperator, firstNumber, secondNumber));
 
     calcOutput.value = `${firstNumber} ${currentOperator} ${secondNumber} =`;
-    currentOperation = null;
+    currentOperator = null;
 }
 
 
 
 
 // CALCULATOR
-function calculate(operator, firstNumber, secondNumber) {
+function operate(operator, firstNumber, secondNumber) {
     a = Number(firstNumber);
     b = Number(secondNumber);
     switch (operator) {
         case '+':
             return add(a, b);
         case '-':
-            return substract(a, b);
+            return subtract(a, b);
         case '*':
             return multiply(a, b);
         case '/':
-            if (b === 0) return null
+            if (b === 0) return null;
             else return divide(a, b);
         default:
             return null;

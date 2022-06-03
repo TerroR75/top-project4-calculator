@@ -12,6 +12,7 @@ body {
     /* background-color: black; */
     margin-top: 30vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -20,7 +21,7 @@ body {
 .inputpanel {
     display: flex;
     flex-direction: column;
-    height: 500px;
+    /* height: 500px; */
 }
 
 
